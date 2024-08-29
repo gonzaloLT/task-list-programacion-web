@@ -15,17 +15,17 @@ function App() {
               <li>
                 <input type="checkbox" />
                 <span>Task 1</span>
-                <button><i class="fa-solid fa-trash"></i></button>
+                <button><i className="fa-solid fa-trash"></i></button>
               </li>
               <li>
                 <input type="checkbox" />
                 <span>Task 2</span>
-                <button><i class="fa-solid fa-trash"></i></button>
+                <button><i className="fa-solid fa-trash"></i></button>
               </li>
               <li>
                 <input type="checkbox" />
                 <span>Task 3</span>
-                <button><i class="fa-solid fa-trash"></i></button>
+                <button><i className="fa-solid fa-trash"></i></button>
               </li>
             </ul>
         </div>
