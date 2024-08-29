@@ -1,32 +1,20 @@
 import './styles/App.css';
+import InputContainer from './components/inputContainer';
+import Title from './components/title';
+import Task from './components/task';
 
 function App() {
 
   return (
     <>
       <div className='container'>
-        <h1>Lista de tareas de Gonzalo</h1>
-        <div className='input-task'>
-          <input type="text" className='input-task-text'/>
-          <button className='input-task-button'>ADD</button>
-        </div>
+        <Title title={'Lista de tareas de Gonzalo'}></Title>
+        <InputContainer></InputContainer>
         <div className='task'>
             <ul className='lista-items'>
-              <li>
-                <input type="checkbox" />
-                <span>Task 1</span>
-                <button><i className="fa-solid fa-trash"></i></button>
-              </li>
-              <li>
-                <input type="checkbox" />
-                <span>Task 2</span>
-                <button><i className="fa-solid fa-trash"></i></button>
-              </li>
-              <li>
-                <input type="checkbox" />
-                <span>Task 3</span>
-                <button><i className="fa-solid fa-trash"></i></button>
-              </li>
+              <Task task={'Tarea 1'}></Task>
+              <Task task={'Tarea 2'}></Task>
+              <Task task={'Tarea 3'}></Task>
             </ul>
         </div>
       </div>
