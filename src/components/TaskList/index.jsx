@@ -1,14 +1,10 @@
-import React from 'react'
-import TaskItem from '../TaskItem';
+import React from "react";
+import TaskItem from "../TaskItem";
 
-function TaskList() {
-  return (
-            <ul className='lista-items'>
-              <TaskItem task={'Tarea 1'}></TaskItem>
-              <TaskItem task={'Tarea 2'}></TaskItem>
-              <TaskItem task={'Tarea 3'}></TaskItem>
-            </ul>
-  )
+function TaskList({ tasks }) {
+  return tasks.map((task) => {
+    return <TaskItem key={task.id} task={task}></TaskItem>;
+  });
 }
 
 export default TaskList;
