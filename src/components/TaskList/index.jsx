@@ -10,6 +10,10 @@ function TaskList({ tasks, setTasks }) {
         );
     };
 
+    const handleDelete = (task) => {
+        setTasks(tasks.filter((t)=> t.id !== task.id))
+    };
+
     return tasks.length > 0 ? (
         <>
             <div className="task">
@@ -18,6 +22,7 @@ function TaskList({ tasks, setTasks }) {
                         key={task.id}
                         task={task}
                         toggleTask={toggleTask}
+                        handleDelete={handleDelete}
                     ></TaskItem>
                 ))}
             </div>
