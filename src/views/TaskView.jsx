@@ -6,7 +6,7 @@ import { useState } from "react";
 
 function TaskView() {
   const [tasks, setTasks] = useState([
-    { id: 1, name: "tareaaa1", completed: false },
+    { id: 1, name: "tareaaa1", completed: true },
     { id: 2, name: "tarea2", completed: false },
   ]);
 
@@ -14,7 +14,7 @@ function TaskView() {
     <div className="container">
       <Title title={"Lista de tareas de Gonzalo"}></Title>
       <Form tasks={tasks} setTasks={setTasks}></Form>
-      <TaskList tasks={tasks}></TaskList>
+      <TaskList tasks={tasks} setTasks={setTasks}></TaskList>
     </div>
   );
 }
