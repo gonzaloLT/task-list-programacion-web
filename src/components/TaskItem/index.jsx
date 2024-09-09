@@ -1,10 +1,9 @@
 import React from "react";
 
-function TaskItem({ task, toggleTask }) {
+function TaskItem({ task, toggleTask}) {
   const { name, completed } = task;
   return (
-    <li>
-      <div className={task.completed ? 'task-completed' : ''}>
+    <li className={task.completed ? 'task-completed' : ''}>
         <input
           type="checkbox"
           checked={completed}
@@ -14,7 +13,6 @@ function TaskItem({ task, toggleTask }) {
         <button>
           <i className="fa-solid fa-trash"></i>
         </button>
-      </div>
     </li>
   );
 }

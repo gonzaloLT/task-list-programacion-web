@@ -19,14 +19,17 @@ function Form({ tasks, setTasks }) {
   };
 
   return (
-    <form action="" onSubmit={handleSubmit}>
+    <form action="" className="input-task" onSubmit={handleSubmit}>
       <input
         type="text"
+        className="input-task-text"
         value={newTaskName}
         onChange={(e) => setNewTaskName(e.target.value)}
         autoFocus
       />
-      <button type="submit">ADD</button>
+      <button type="submit" className="input-task-button">
+        ADD
+      </button>
     </form>
   );
 }
