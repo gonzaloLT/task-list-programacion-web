@@ -13,7 +13,7 @@ function TaskView() {
   return (
     <div className="container">
       <Title title={"Lista de tareas de Gonzalo"}></Title>
-      <Form></Form>
+      <Form tasks={tasks} setTasks={setTasks}></Form>
       <TaskList tasks={tasks}></TaskList>
     </div>
   );
