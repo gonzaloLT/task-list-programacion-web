@@ -5,10 +5,7 @@ import TaskList from "../components/TaskList";
 import { useState } from "react";
 
 function TaskView() {
-  const [tasks, setTasks] = useState([
-    { id: 1, name: "tareaaa1", completed: true },
-    { id: 2, name: "tarea2", completed: false },
-  ]);
+  const [tasks, setTasks] = useState([]);
 
   return (
     <div className="container">
