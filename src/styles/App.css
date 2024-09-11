@@ -38,9 +38,11 @@ h1 {
 .task ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .task li {
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
