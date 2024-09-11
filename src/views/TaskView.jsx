@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "../components/Form";
-import Title from "../components/Title";
+import Title from "../components/title";
 import TaskList from "../components/TaskList";
 
 function TaskView() {
