@@ -19,7 +19,7 @@ function Form({ tasks, setTasks }) {
     };
 
     return (
-        <form action="" className="input-task" onSubmit={handleSubmit}>
+        <form action="" className="form" onSubmit={handleSubmit}>
             <input
                 type="text"
                 className="input-task-text"

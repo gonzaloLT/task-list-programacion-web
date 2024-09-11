@@ -1,0 +1,115 @@
+$grid-unit: 8px;
+$grid-width: 1px;
+$grid-radius: 4px;
+
+$font-family: Roboto, sans-serif;
+
+$negro: rgba(34,34,34,1);
+$blanco: rgba(255,255,255,1);
+$blanco20: rgba(255,255,255,0.5);
+$blanco50: rgba(255,255,255,0.2);
+
+body{
+    background-color: $negro;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: $grid-unit;
+    max-width: 512px;
+    margin: auto;
+}
+
+.title{
+    font-family: $font-family;
+    font-size: 36px;
+    color: $blanco;
+    width: 100%;
+    margin-bottom: $grid-unit * 3;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    padding: $grid-unit;
+    gap: $grid-unit;
+
+    .input-task-text{
+        flex-grow: 1;
+        font-family: $font-family;
+        font-size: 24px;
+        padding: $grid-unit;
+        background: transparent;
+        border: 1px solid red;
+        border-radius: $grid-radius;
+        color: $blanco50;
+    }
+
+    .input-task-button{
+        width: 48px;
+        height: 48px;
+        padding: $grid-unit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: $grid-unit;
+        box-sizing: border-box;
+    }
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: $grid-unit;
+    margin-bottom: $grid-unit;
+    border-radius: $grid-radius;
+    border: 1px solid $blanco50;
+    box-sizing: border-box;
+
+    &.completed {
+        .text-task {
+          text-decoration: line-through; // Tachado
+          opacity: 0.6; // Opcional, para reducir la visibilidad
+        }
+      }
+
+
+    .checkbox{
+        width: $grid-radius * 3;
+        height: $grid-radius * 3;
+        margin-right: $grid-unit;
+        border: 2px solid $blanco;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-task{
+        flex-grow: 1;
+        font-size: $grid-radius * 3;
+        margin-right: $grid-unit;
+        color: $blanco;
+        text-align: left;
+
+    }
+
+    .delete-task{
+        width: $grid-radius * 6;
+        height: $grid-radius * 6;
+        padding: $grid-unit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: $grid-unit;
+        box-sizing: border-box;
+    }
+}
+
+
+
+

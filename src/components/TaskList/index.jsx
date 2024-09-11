@@ -18,7 +18,7 @@ function TaskList({ tasks, setTasks }) {
 
     return sortedTasks.length > 0 ? (
         <>
-            <div className="task">
+            <div className="task-container">
                 {sortedTasks.map((task) => (
                     <TaskItem
                         key={task.id}

@@ -1,4 +1,4 @@
-import './styles/App.css';
+import './styles/App.scss';
 import TaskView from './views/TaskView';
 
 function App() {
