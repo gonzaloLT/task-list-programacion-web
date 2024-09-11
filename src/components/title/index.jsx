@@ -6,4 +6,5 @@ function Title({title}) {
   )
 }
 
+
 export default Title
