@@ -9,6 +9,7 @@
   width: 300px;
   padding: 20px;
   border: 1px solid;
+  margin: 2px;
 }
 
 h1 {
@@ -51,6 +52,14 @@ h1 {
 
 .task li span {
   flex-grow: 0.9;
+}
+
+
+.text-task{
+  display: block;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .task-completed {

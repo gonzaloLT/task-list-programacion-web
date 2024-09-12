@@ -10,7 +10,7 @@ function TaskItem({ task, toggleTask, handleDelete }) {
                 checked={completed}
                 onChange={() => toggleTask(task)}
             />
-            <span>{name}</span>
+            <span className="text-task">{name}</span>
             <button onClick={() => handleDelete(task)}>
                 <i className="fa-solid fa-trash"></i>
             </button>
