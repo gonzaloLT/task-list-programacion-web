@@ -4,11 +4,11 @@ function Form({ tasks, setTasks }) {
     const [newTaskName, setNewTaskName] = useState("");
 
     const handleSubmit = (e) => {
+        e.preventDefault();
         if (newTaskName.trim() === "") {
             alert("Introduzca un nombre de tarea");
             return;
         }
-        e.preventDefault();
         const newTask = {
             id: Date.now(),
             name: newTaskName,
