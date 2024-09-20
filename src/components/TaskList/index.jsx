@@ -14,12 +14,10 @@ function TaskList({ tasks, setTasks }) {
         setTasks(tasks.filter((t)=> t.id !== task.id))
     };
 
-    const sortedTasks = [...tasks].sort((a,b) => b.id - a.id);
-
-    return sortedTasks.length > 0 ? (
+    return tasks.length > 0 ? (
         <>
             <div className="task">
-                {sortedTasks.map((task) => (
+                {tasks.map((task) => (
                     <TaskItem
                         key={task.id}
                         task={task}

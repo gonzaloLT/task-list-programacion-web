@@ -14,7 +14,7 @@ function Form({ tasks, setTasks }) {
             name: newTaskName,
             completed: false,
         };
-        setTasks([...tasks, newTask]);
+        setTasks([newTask,...tasks]);
         setNewTaskName("");
     };
 
